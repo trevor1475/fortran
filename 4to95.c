@@ -1,3 +1,4 @@
+//Trevor Livingston - 4to95.c - Feb 4/15
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,6 +15,7 @@ int main()
 		return 0;
 	}
 	
+	//use redirection
 	while((current = fgetc(fp)) != EOF)
 	{
 	    if((int)current >= 65 && (int)current <=90)
@@ -26,7 +28,7 @@ int main()
 	        //proper commenting for fortran 95
 	        current = '!';
 	    }
-	    if((int)current == 46 || equalsCount > 0)
+	    if((prev == ' ' && (int)current == 46) || equalsCount > 0)
 	    {
 	        //storing 4 char values after a '.' and later checks if .EQ. needs to be changed to ==
 	        equals[equalsCount] = current;
