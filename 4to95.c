@@ -7,7 +7,7 @@ int main()
     FILE *fp = stdin;
     char current;
     char prev = '\n';
-    char equals[4];
+    char equals[5];
     int equalsCount = 0;
     
     if(!fp)
@@ -42,7 +42,8 @@ int main()
 	    }
 	    if(equalsCount == 4)
 	    {
-	        if(strcmp(equals, ".eq."))
+	    	equals[4] = '\0';
+	        if(strcmp(equals, ".eq.") == 0)
 	        {
 	            printf("==");
 	        }
