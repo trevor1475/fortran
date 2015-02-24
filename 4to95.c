@@ -47,6 +47,22 @@ int main()
 	        {
 	            printf("==");
 	        }
+	        else if(strcmp(equals, ".ge.") == 0)
+	        {
+	        	printf(">=");
+	        }
+	        else if(strcmp(equals, ".gt.") == 0)
+	        {
+	        	printf(">");
+	        }
+	        else if(strcmp(equals, ".le.") == 0)
+	        {
+	        	printf("<=");
+	        }
+	        else if(strcmp(equals, ".lt.") == 0)
+	        {
+	        	printf("<");
+	        }
 	        else
 	        {
 	            //if string didnt match .EQ. just print it out like normal
